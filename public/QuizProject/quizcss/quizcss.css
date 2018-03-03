@@ -1,0 +1,53 @@
+body{
+	background-color: Orange;
+	color: White;
+	font-family: "New Times Roman";
+}
+
+
+/*below is an ideal model of a container*/
+#container{
+	background-color: DeepSkyBlue;
+	width:60%;
+	margin:15px auto;
+	overflow: auto;
+	padding:30px;
+	font-size:16px;
+}
+
+header {
+	text-align:center;
+}
+
+header > h1 {
+	margin: 0px;
+}
+header > p{
+	margin-top:5px;
+	color:black;
+}
+
+section{
+	border-top: dashed 2px;
+}
+
+#result{
+	background-color: orange;
+	border:solid black;
+	padding: 0px 20px; 	
+	visibility: hidden;
+	margin: 10px 0px;
+}
+
+footer{
+	text-align:center;
+}
+
+input[type="submit"]{
+	background-color: orange;
+	border-radius:5px;
+	padding:10px;
+	cursor: pointer;
+}
+
+

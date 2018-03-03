@@ -1,0 +1,68 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Mile Tracker</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/index.css">
+		<script src = "js/doT.js"></script>
+		<script src="js/index.js"></script>
+		<script id = "allData" type="text/x-dot-template">
+			{{~it :value:index}}
+				<div class="singleData">
+					<div id="mileage">
+						<p> Distance: {{=value[1]}} m</p>
+						<p> Date: {{=value[0]}}</p>
+					</div>
+					<div id="mileageAction">
+						<p data-index={{=index}} class="edit">Edit</p>	
+						<p data-index={{=index}} class="delete">Delete</p>
+					</div>	
+				</div>
+			{{~}}
+		</script>
+	</head>
+	<body>
+		<div id="container">
+		<header>
+			<div id = "title">
+				MileTracker
+			</div>
+<!-- 		 -->
+			<div id = "actions"> 
+				<div class= "header"><img class= "header-image" id = "home" src="img/home.png"><p>Home</p></div>
+				<div class= "header"><img class= "header-image" id = "add" src="img/add-button.jpg"><p>Add Run</p></div>
+			</div>
+		</header>
+		<section id = "section1">
+			<h2>Welcome to the MileTracker App!</h2>
+			<p>With this app you can track your running,jogging or walking miles</p>
+
+			<h2>Your Latest Runs</h2>
+			<div id = "inputContainer">
+				<img src="img/search-icon.png">
+				<input type="text" id="search" placeholder="Filter runs by date or distance">
+			</div>
+			<div id = "dataContainer" >
+
+			</div>
+			<div id="clearMileage">
+				Clear Mileage
+			</div>
+		</section>
+		<section id = "section2" style= "display:none">
+			<h1><span id = "AE"></span> Run</h1>
+			<form id = "formAE">
+				<p>Enter Miles</p>
+				<input type="text" id ="addEditDistance">
+				<p>Date</p>
+				<input type="date" id ="addEditDate">
+				<p></p>
+				<input data-index="" id="submit" type = "submit">
+			</form>
+		</section>
+		<footer class = "footer">
+			MileTracker 2014,Mile Tracker
+		</footer>
+	</div>
+	</body>
+</html>
