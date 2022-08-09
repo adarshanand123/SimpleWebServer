@@ -10,7 +10,8 @@ $(document).ready(
 						part: "snippet",
 						q: search,
 						type: "video",
-						key: "AIzaSyD4C6JVbbbG1BovN1I5ew8zI4wyWgUYDUw",
+						// key: "AIzaSyD4C6JVbbbG1BovN1I5ew8zI4wyWgUYDUw",
+						key : "AIzaSyCdLk4LrKiXTifz3YL6boDpQkypsdtRYAs",
 						maxResults:25
 					}, function(data){
 						
